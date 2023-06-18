@@ -1,3 +1,0 @@
-echo "export OPENAI_API_KEY='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'" >> ~/.zshrc
-source ~/.zshrc
-echo $OPENAI_API_KEY
