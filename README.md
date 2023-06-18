@@ -1,0 +1,87 @@
+# openai
+
+```commandline
+poetry new --src openai
+cd openai
+```
+
+
+```commandline
+poetry env list
+poetry env use python3
+poetry config --list
+poetry show
+
+
+poetry lock
+poetry install
+poetry update
+poetry run pytest
+poetry export --output requirements.txt
+```
+
+#### (Install a Package With Poetry)
+```commandline
+poetry add requests
+poetry add black --group dev
+```
+
+ChatGPT, developed by OpenAI, is a powerful tool used for various applications, including chatbots, content generation, and customer service. Its strength lies in generating human-like text based on the prompts it receives. In this tutorial, we will delve into the art and science of Prompt Engineering - crafting precise and effective prompts to get the best responses from ChatGPT.
+We decided to focus on ChatGPT Prompt Engineering because it's a crucial skill when working with language models. Understanding how to create effective prompts leads to more accurate, focused, and useful responses.
+
+### Setup API
+> https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety
+
+### Prompt Engineering
+> https://github.com/openai/openai-cookbook/blob/main/how_to_work_with_large_language_models.md
+
+### Rate Limits
+> https://github.com/openai/openai-cookbook/blob/main/examples/How_to_handle_rate_limits.ipynb
+> https://github.com/openai/openai-cookbook/blob/main/examples/api_request_parallel_processor.py
+> https://github.com/openai/openai-cookbook/blob/main/examples/Unit_test_writing_using_a_multi-step_prompt.ipynb
+> https://github.com/openai/openai-cookbook/blob/main/examples/Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
+
+### Search
+> https://github.com/openai/openai-cookbook/blob/main/examples/Semantic_text_search_using_embeddings.ipynb
+> https://github.com/openai/openai-cookbook/blob/main/examples/Question_answering_using_embeddings.ipynb
+> https://github.com/openai/openai-cookbook/blob/main/examples/Recommendation_using_embeddings.ipynb
+> https://github.com/openai/openai-cookbook/blob/main/examples/Code_search.ipynb
+
+### Q&A
+> https://github.com/openai/openai-cookbook/blob/main/examples/Question_answering_using_a_search_API.ipynb
+
+### Embeddings
+> https://github.com/openai/openai-cookbook/blob/main/examples/Customizing_embeddings.ipynb
+> https://github.com/openai/openai-cookbook/blob/main/examples/Embedding_Wikipedia_articles_for_search.ipynb
+> https://github.com/openai/openai-cookbook/blob/main/examples/Embedding_long_inputs.ipynb
+> https://github.com/openai/openai-cookbook/blob/main/examples/Regression_using_embeddings.ipynb
+> https://github.com/openai/openai-cookbook/blob/main/examples/User_and_product_embeddings.ipynb
+> https://github.com/openai/openai-cookbook/blob/main/examples/Zero-shot_classification_with_embeddings.ipynb
+
+### Clustering
+> https://github.com/openai/openai-cookbook/blob/main/examples/Clustering.ipynb
+> https://github.com/openai/openai-cookbook/blob/main/examples/Clustering_for_transaction_classification.ipynb
+
+### Content Extraction
+> https://github.com/openai/openai-cookbook/blob/main/examples/Entity_extraction_for_long_documents.ipynb
+
+### Others
+> https://github.com/openai/openai-cookbook/blob/main/examples/Fine-tuned_classification.ipynb
+> https://github.com/openai/openai-cookbook/blob/main/examples/How_to_build_a_tool-using_agent_with_Langchain.ipynb
+> https://github.com/openai/openai-cookbook/blob/main/examples/How_to_call_functions_for_knowledge_retrieval.ipynb
+> https://github.com/openai/openai-cookbook/blob/main/examples/How_to_call_functions_with_chat_models.ipynb
+> https://github.com/openai/openai-cookbook/blob/main/examples/How_to_format_inputs_to_ChatGPT_models.ipynb
+> https://github.com/openai/openai-cookbook/blob/main/examples/Multiclass_classification_for_transactions.ipynb
+> https://github.com/openai/openai-python
+
+
+## References
+> https://github.com/dair-ai/Prompt-Engineering-Guide
+
+> https://github.com/openai/openai-cookbook/blob/main/examples/Question_answering_using_embeddings.ipynb
+
+> https://github.com/openai/openai-cookbook/blob/main/examples/vector_databases/Using_vector_databases_for_embeddings_search.ipynb
+
+> https://www.datacamp.com/tutorial/a-beginners-guide-to-chatgpt-prompt-engineering
+
+> https://learn.microsoft.com/en-us/azure/app-service/# llm
