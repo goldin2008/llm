@@ -41,14 +41,21 @@ We decided to focus on ChatGPT Prompt Engineering because it's a crucial skill w
 > https://github.com/openai/openai-cookbook/blob/main/examples/Unit_test_writing_using_a_multi-step_prompt.ipynb
 > https://github.com/openai/openai-cookbook/blob/main/examples/Unit_test_writing_using_a_multi-step_prompt_with_older_completions_API.ipynb
 
-### Search
+### Q&A (56)
+> https://github.com/openai/openai-cookbook/blob/main/examples/Question_answering_using_a_search_API.ipynb
+
+### Summarization (56)
+
+### Content Generation (53)
+
+### Semantic Search (26)
 > https://github.com/openai/openai-cookbook/blob/main/examples/Semantic_text_search_using_embeddings.ipynb
 > https://github.com/openai/openai-cookbook/blob/main/examples/Question_answering_using_embeddings.ipynb
 > https://github.com/openai/openai-cookbook/blob/main/examples/Recommendation_using_embeddings.ipynb
 > https://github.com/openai/openai-cookbook/blob/main/examples/Code_search.ipynb
 
-### Q&A
-> https://github.com/openai/openai-cookbook/blob/main/examples/Question_answering_using_a_search_API.ipynb
+### Content Extraction (21)
+> https://github.com/openai/openai-cookbook/blob/main/examples/Entity_extraction_for_long_documents.ipynb
 
 ### Embeddings
 > https://github.com/openai/openai-cookbook/blob/main/examples/Customizing_embeddings.ipynb
@@ -61,9 +68,6 @@ We decided to focus on ChatGPT Prompt Engineering because it's a crucial skill w
 ### Clustering
 > https://github.com/openai/openai-cookbook/blob/main/examples/Clustering.ipynb
 > https://github.com/openai/openai-cookbook/blob/main/examples/Clustering_for_transaction_classification.ipynb
-
-### Content Extraction
-> https://github.com/openai/openai-cookbook/blob/main/examples/Entity_extraction_for_long_documents.ipynb
 
 ### Others
 > https://github.com/openai/openai-cookbook/blob/main/examples/Fine-tuned_classification.ipynb
