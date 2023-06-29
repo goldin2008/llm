@@ -89,3 +89,5 @@ We decided to focus on ChatGPT Prompt Engineering because it's a crucial skill w
 > https://www.datacamp.com/tutorial/a-beginners-guide-to-chatgpt-prompt-engineering
 
 > https://learn.microsoft.com/en-us/azure/app-service/# llm
+
+> https://github.com/khuyentran1401/data-science-template/blob/dvc-poetry/README.md
