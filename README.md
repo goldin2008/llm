@@ -78,6 +78,15 @@ We decided to focus on ChatGPT Prompt Engineering because it's a crucial skill w
 > https://github.com/openai/openai-cookbook/blob/main/examples/Multiclass_classification_for_transactions.ipynb
 > https://github.com/openai/openai-python
 
+### What are embeddings?
+OpenAI’s text embeddings measure the relatedness of text strings. Embeddings are commonly used for:
+- Search (where results are ranked by relevance to a query string)
+- Clustering (where text strings are grouped by similarity)
+- Recommendations (where items with related text strings are recommended)
+- Anomaly detection (where outliers with little relatedness are identified)
+- Diversity measurement (where similarity distributions are analyzed)
+- Classification (where text strings are classified by their most similar label)
+An embedding is a vector (list) of floating point numbers. The distance between two vectors measures their relatedness. Small distances suggest high relatedness and large distances suggest low relatedness.
 
 ## References
 > https://github.com/dair-ai/Prompt-Engineering-Guide
