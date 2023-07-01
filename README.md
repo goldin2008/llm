@@ -104,3 +104,7 @@ An embedding is a vector (list) of floating point numbers. The distance between 
 > https://learn.microsoft.com/en-us/azure/app-service/# llm
 
 > https://github.com/khuyentran1401/data-science-template/blob/dvc-poetry/README.md
+
+> https://towardsdatascience.com/how-to-structure-a-data-science-project-for-readability-and-transparency-360c6716800
+
+> https://towardsdatascience.com/4-pre-commit-plugins-to-automate-code-reviewing-and-formatting-in-python-c80c6d2e9f5
