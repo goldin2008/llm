@@ -7,3 +7,8 @@ repos:
     rev: 6.0.0
     hooks:
     -   id: flake8
+-   repo: https://github.com/econchick/interrogate
+    rev: 1.4.0
+    hooks:
+    - id: interrogate
+      args: [-vv, -i, --fail-under=80]
