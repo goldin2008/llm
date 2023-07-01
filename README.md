@@ -22,8 +22,8 @@ poetry export --output requirements.txt
 
 ```commandline
 git commit -m 'add pre-commit examples' --no-verify
-
 ```
+
 #### (Install a Package With Poetry)
 ```commandline
 poetry add requests
