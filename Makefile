@@ -8,7 +8,11 @@ activate:
 	poetry shell
 
 initialize_git:
-  @echo "Initialize git"
+	@echo "Initialize git"
 	git init
 
 setup: initialize_git install
+
+doc:
+	@echo "Creating API document"
+	pdoc --html src/llm/test.py

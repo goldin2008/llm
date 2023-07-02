@@ -27,7 +27,16 @@ pdoc --http HOST:PORT <filename.py>
 pdoc --http localhost:8080 src/llm/test.py
 pdoc --html <filename.py>
 pdoc --html src/llm/test.py
+
 ```
+
+To check, I use the command 
+```commandline
+cat -e -t -v makefile_name
+```
+It shows the presence of tabs with ^I and line endings with $.
+Both are vital to ensure that dependencies end properly and tabs mark the action for 
+the rules so that they are easily identifiable to the make utility.
 
 #### (Install a Package With Poetry)
 ```commandline
