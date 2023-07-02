@@ -1,4 +1,12 @@
 repos:
+  - repo: https://github.com/psf/black
+    rev: 23.3.0  # Specify a specific revision if desired
+    hooks:
+      - id: black
+  - repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
   - repo: https://github.com/PyCQA/flake8
     rev: 6.0.0
     hooks:
@@ -8,11 +16,3 @@ repos:
     hooks:
     - id: interrogate
       args: [-vv, -i, --fail-under=80]
-  - repo: https://github.com/pycqa/isort
-    rev: 5.12.0
-    hooks:
-      - id: isort
-  - repo: https://github.com/psf/black
-    rev: 23.3.0  # Specify a specific revision if desired
-    hooks:
-      - id: black
