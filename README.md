@@ -22,6 +22,11 @@ poetry export --output requirements.txt
 
 ```commandline
 git commit -m 'add pre-commit examples' --no-verify
+
+pdoc --http HOST:PORT <filename.py>
+pdoc --http localhost:8080 src/llm/test.py
+pdoc --html <filename.py>
+pdoc --html src/llm/test.py
 ```
 
 #### (Install a Package With Poetry)

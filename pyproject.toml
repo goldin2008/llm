@@ -17,6 +17,8 @@ scikit-learn = "^1.2.2"
 torch = "^2.0.1"
 torchvision = "^0.15.2"
 tiktoken = "^0.4.0"
+pdoc3 = "^0.10.0"
+flask = "^2.3.2"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -64,5 +66,5 @@ verbose = 0
 quiet = false
 whitelist-regex = []
 color = true
-generate-badge = "."
+generate-badge = "./figs/"
 badge-format = "svg"
