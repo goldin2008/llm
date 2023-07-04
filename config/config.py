@@ -9,8 +9,8 @@ with open("config/config.json", "r") as f:
     """
     config = json.load(f)
 
-with open("config/config.yaml", "r") as f:
-    config = yaml.safe_load(f)
+# with open("config/config.yaml", "r") as f:
+#     config = yaml.safe_load(f)
 
 # output_folder_path = os.path.join(config['output_folder_path'])
 # test_data_path = os.path.join(config['test_data_path'])

@@ -8,7 +8,6 @@ from datetime import datetime
 import numpy as np
 import pandas as pd
 
-# Now you can import the module from the subfolder
 from config.config import DATA_PATH, OUTPUT_MODEL_PATH, TEST_DATA_PATH
 
 # Add the parent_folder directory to the Python import path
@@ -18,6 +17,9 @@ parent_folder_path = os.path.abspath(
 # print(os.path.dirname(__file__))
 # print(parent_folder_path)
 sys.path.append(parent_folder_path)
+
+# Now you can import the module from the subfolder
+# from config.config import DATA_PATH, OUTPUT_MODEL_PATH, TEST_DATA_PATH
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
 logger = logging.getLogger()
