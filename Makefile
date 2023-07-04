@@ -16,4 +16,4 @@ setup: initialize_git install
 doc:
 	@echo "Creating API document"
 	rm -f html/test.html
-	pdoc --html src/llm/test.py
+	pdoc --html src/llm/training.py
