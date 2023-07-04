@@ -21,14 +21,21 @@ poetry export --output requirements.txt
 ```
 
 ```commandline
-git commit -m 'add pre-commit examples' --no-verify
-
 pdoc --http HOST:PORT <filename.py>
 pdoc --http localhost:8080 src/llm/test.py
 pdoc --html <filename.py>
 pdoc --html src/llm/test.py
-
 ```
+
+```commandline
+git commit -m 'add pre-commit examples' --no-verify
+```
+In this template, we use five different plugins that are specified in .pre-commit-config.yaml . They are:
+- black — formats Python code
+- flake8 — checks the style and quality of your Python code
+- isort — automatically sorts imported libraries alphabetically and separates them into sections and types.
+- mypy — checks static type 
+- nbstripout — strips output from Jupyter notebooks
 
 To check, I use the command 
 ```commandline
