@@ -9,7 +9,7 @@ import timeit
 import numpy as np
 import pandas as pd
 
-from config.config import DATA_PATH, PROD_DEPLOYMENT_PATH, TEST_DATA_PATH
+from ...config.config import DATA_PATH, PROD_DEPLOYMENT_PATH, TEST_DATA_PATH
 
 # Add the parent_folder directory to the Python import path
 parent_folder_path = os.path.abspath(
@@ -20,6 +20,14 @@ parent_folder_path = os.path.abspath(
 sys.path.append(parent_folder_path)
 
 # from config.config import DATA_PATH, PROD_DEPLOYMENT_PATH, TEST_DATA_PATH
+
+with open("config/config.json", "r") as config_file:
+    config = json.load(config_file)
+
+input_folder_path = os.path.join(config["input_folder_path"])
+output_folder_path = os.path.join(config["output_folder_path"])
+output_model_path = os.path.join(config["output_model_path"])
+prod_deployment_path = os.path.join(config["prod_deployment_path"])
 
 logging.basicConfig(
     stream=sys.stdout, level=logging.INFO, format="%(asctime)-15s %(message)s"
@@ -134,6 +142,12 @@ def _training_timing():
 
 
 def execution_time():
+    """
+    Function to get timings
+
+    Returns:
+        float: running time
+    """
     logger.info("Execution Time")
     # calculate timing of training.py and ingestion.py
     logger.info("Calculating time for ingestion.py")
