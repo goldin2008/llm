@@ -47,7 +47,17 @@ def check_new_data():
     :return: bool True if new data is found, False if not
     """
     with open(os.path.join(output_folder_path, "ingestedfiles.txt"), "r") as f:
-        ingested_files = f.read()
+        # ingested_files = f.read()
+        ingested_files = []
+        for line in f:
+            line = (
+                line.strip()
+            )  # Remove leading/trailing whitespace or newline characters
+            # Do something with the line
+            if line.startswith("Ingestion date"):
+                continue
+            ingested_files.append(line)  # Or perform any other operations
+
     source_files = set(os.listdir(input_folder_path))
     diff = source_files.difference(ingested_files)
 
@@ -57,7 +67,7 @@ def check_new_data():
     print("source_files: ", source_files)
     print(diff)
 
-    return True if len(diff) == 0 else False
+    return True if len(diff) > 0 else False
 
 
 def check_model_drift():
@@ -68,13 +78,17 @@ def check_model_drift():
     with open(os.path.join(prod_deployment_path, "latestscore.txt"), "r") as f:
         latest_score = float(f.read())
 
+    print("latest_score :", latest_score)
+
     file_path = os.path.join(output_folder_path, "finaldata.csv")
+    print("file_path: ", file_path)
+
     df_data = pd.read_csv(file_path)
     df = df_data.copy().drop("corporation", axis=1)
     y = df["exited"]
-    X = df.drop("exited", axis=1)
+    # X = df.drop("exited", axis=1)
 
-    y_pred = diagnostics.model_predictions(X)
+    y_pred = diagnostics.model_predictions()
     new_score = metrics.f1_score(y, y_pred)
 
     return latest_score < new_score
@@ -87,16 +101,29 @@ def main():
     Returns:
     """
     if check_new_data():
-        subprocess.run(["python", "ingestion.py"], stdout=subprocess.PIPE)
+        print("Found new data, begin ingestion step")
+        subprocess.run(
+            ["python", "src/llm/ingestion.py"], stdout=subprocess.PIPE
+        )
         if check_model_drift():
-            subprocess.run(["python", "training.py"], stdout=subprocess.PIPE)
-            subprocess.run(["python", "deployment.py"], stdout=subprocess.PIPE)
-            subprocess.run(["python", "scoring.py"], stdout=subprocess.PIPE)
             subprocess.run(
-                ["python", "diagnostics.py"], stdout=subprocess.PIPE
+                ["python", "src/llm/training.py"], stdout=subprocess.PIPE
             )
-            subprocess.run(["python", "reporting.py"], stdout=subprocess.PIPE)
+            subprocess.run(
+                ["python", "src/llm/deployment.py"], stdout=subprocess.PIPE
+            )
+            subprocess.run(
+                ["python", "src/llm/scoring.py"], stdout=subprocess.PIPE
+            )
+            subprocess.run(
+                ["python", "src/llm/diagnostics.py"], stdout=subprocess.PIPE
+            )
+            subprocess.run(
+                ["python", "src/llm/reporting.py"], stdout=subprocess.PIPE
+            )
 
 
 if __name__ == "__main__":
-    main()
+    # check_new_data()
+    check_model_drift()
+    # main()

@@ -8,7 +8,7 @@ from datetime import datetime
 import numpy as np
 import pandas as pd
 
-from config.config import DATA_PATH, OUTPUT_MODEL_PATH, TEST_DATA_PATH
+# from config.config import DATA_PATH, OUTPUT_MODEL_PATH, TEST_DATA_PATH
 
 # Add the parent_folder directory to the Python import path
 parent_folder_path = os.path.abspath(
