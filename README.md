@@ -5,7 +5,6 @@ poetry new --src openai
 cd openai
 ```
 
-
 ```commandline
 poetry env list
 poetry env use python3
