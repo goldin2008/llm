@@ -1,5 +1,58 @@
 # openai
 
+### USE CASES
+In the context of using a Large Language Model (LLM) like GPT-3.5 for access and identity management, there are several
+use cases that can provide valuable insights, enhance efficiency, and improve security. Here are some specific use
+cases:
+
+Access Rights Verification:
+Associates can query the LLM to verify their current access rights and entitlements. For example:
+  - "What systems can I access?"
+  - "Do I have permission to view this document?"
+  - "Am I authorized to modify this record?"
+
+Access Request Guidance:
+When associates need to request additional access rights or permissions, the LLM can provide guidance:
+  - "What steps do I need to follow to request access to the sales database?"
+  - "Can you help me draft an access request for the financial reports?"
+
+Policy Interpretation:
+Associates often need help understanding company policies related to access and entitlements:
+  - "What is the policy for accessing confidential customer data?"
+  - "Can you explain the access control policy for the HR portal?"
+
+Policy Violation Alerts:
+The LLM can monitor access requests and identify potential policy violations, triggering alerts:
+  - "Notify me if any access requests violate the principle of least privilege."
+  - "Alert me if an employee tries to access a restricted resource."
+
+User Training and Onboarding:
+During employee onboarding, the LLM can provide information about access and entitlements:
+  - "Can you explain the different user roles and their associated permissions?"
+  - "What training materials are available for understanding access management?"
+
+Access Audit Trail:
+Associates can query the LLM to retrieve information about their past access history:
+  - "Can you provide a log of my access activities for the last month?"
+  - "Show me a summary of the resources I accessed last quarter."
+
+Access Recommendations:
+The LLM can recommend access rights based on historical data and patterns:
+  - "Based on your role, here are the typical access rights you should have."
+  - "Would you like me to suggest the access permissions for this project?"
+
+Regulatory Compliance:
+The LLM can assist in understanding and applying access controls to ensure compliance with industry regulations:
+  - "What access controls are required for handling healthcare data under HIPAA?"
+  - "Can you help me configure access rights to comply with GDPR?"
+
+These use cases demonstrate how an LLM can play a role in enhancing access and identity management processes by
+providing quick and accurate information, assisting with policy compliance, and helping associates make informed
+decisions regarding access requests and entitlements. However, it's crucial to consider the security, privacy, and
+ethical implications of implementing such a system, and to ensure that it aligns with your organization's policies and
+regulatory requirements.
+
+
 ```commandline
 poetry new --src openai
 cd openai
