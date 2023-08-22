@@ -128,3 +128,5 @@ An embedding is a vector (list) of floating point numbers. The distance between 
 > https://towardsdatascience.com/how-to-structure-a-data-science-project-for-readability-and-transparency-360c6716800
 
 > https://towardsdatascience.com/4-pre-commit-plugins-to-automate-code-reviewing-and-formatting-in-python-c80c6d2e9f5
+
+> https://stanford-cs324.github.io/winter2022/lectures/ 
