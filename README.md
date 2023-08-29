@@ -191,3 +191,7 @@ An embedding is a vector (list) of floating point numbers. The distance between 
 > https://zh-v2.d2l.ai/chapter_introduction/index.html
 
 > https://www.coursera.org/instructor/htlin
+
+> 李宏毅2023春机器学习课程 https://www.bilibili.com/video/BV1TD4y137mP/?spm_id_from=333.337.search-card.all.click&vd_source=dac84efc7251c2dbebbcdf001659dc53
+
+> 
