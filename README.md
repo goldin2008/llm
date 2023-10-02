@@ -52,7 +52,6 @@ ethical implications of implementing such a system, and to ensure that it aligns
 regulatory requirements.
 
 
-
 ```commandline
 poetry new --src openai
 cd openai
