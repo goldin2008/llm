@@ -1,4 +1,15 @@
 # openai
+
+### ML system design
+Frame the problem as an ML task
+- Defining the ML objective
+- Specifying the system's input and output
+- Choosing the right ML category
+Data Preparation
+- Data engineering
+- Feature engineering
+
+
 ### USE CASES
 In the context of using a Large Language Model (LLM) like GPT-3.5 for access and identity management, there are several
 use cases that can provide valuable insights, enhance efficiency, and improve security. Here are some specific use
