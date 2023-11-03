@@ -5,6 +5,7 @@ Frame the problem as an ML task
 - Defining the ML objective
 - Specifying the system's input and output
 - Choosing the right ML category
+
 Data Preparation
 - Data engineering
 - Feature engineering
