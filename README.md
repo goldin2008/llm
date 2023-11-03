@@ -10,6 +10,21 @@ Data Preparation
 - Data engineering
 - Feature engineering
 
+Model Development
+- Model selection
+- Model training
+- Constructing the dataset
+- Choosing the loss function
+
+Evaluation
+- Offline metrics
+- Online metrics
+
+Serving
+- Prediction pipeline
+
+Other Talking Points
+
 
 ### USE CASES
 In the context of using a Large Language Model (LLM) like GPT-3.5 for access and identity management, there are several
