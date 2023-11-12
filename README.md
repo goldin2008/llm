@@ -26,8 +26,8 @@ Other Talking Points
 
 
 Table of content for volume 1:
-[] Chapter 1: Scale From Zero To Millions Of Users
-[]Chapter 2: Back-of-the-envelope Estimation
+- [ ] Chapter 1: Scale From Zero To Millions Of Users
+- []Chapter 2: Back-of-the-envelope Estimation
 
 Chapter 3: A Framework For System Design Interviews
 
