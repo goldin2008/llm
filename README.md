@@ -24,7 +24,7 @@ Serving
 
 Other Talking Points
 
-
+## Books
 Table of content for volume 1:
 - [ ] Chapter 1: Scale From Zero To Millions Of Users
 - [ ] Chapter 2: Back-of-the-envelope Estimation
