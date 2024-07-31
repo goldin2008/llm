@@ -26,34 +26,34 @@ Other Talking Points
 
 ## Books
 Table of content for volume 1:
-- [ ] Chapter 1: Scale From Zero To Millions Of Users
-- [ ] Chapter 2: Back-of-the-envelope Estimation
-- [ ] Chapter 3: A Framework For System Design Interviews
-- [ ] Chapter 4: Design A Rate Limiter
-- [ ] Chapter 5: Design Consistent Hashing
-- [ ] Chapter 6: Design A Key-value Store
-- [ ] Chapter 7: Design A Unique Id Generator In Distributed Systems
-- [ ] Chapter 8: Design A Url Shortener
-- [ ] Chapter 9: Design A Web Crawler
-- [ ] Chapter 10: Design A Notification System
-- [ ] Chapter 11: Design A News Feed System
-- [ ] Chapter 12: Design A Chat System
-- [ ] Chapter 13: Design A Search Autocomplete System
-- [ ] Chapter 14: Design Youtube
-- [ ] Chapter 15: Design Google Drive
-- [ ] Chapter 16: The Learning Continues
+- [X] Chapter 1: Scale From Zero To Millions Of Users
+- [X] Chapter 2: Back-of-the-envelope Estimation
+- [X] Chapter 3: A Framework For System Design Interviews
+- [X] Chapter 4: Design A Rate Limiter
+- [X] Chapter 5: Design Consistent Hashing
+- [X] Chapter 6: Design A Key-value Store
+- [X] Chapter 7: Design A Unique Id Generator In Distributed Systems
+- [X] Chapter 8: Design A Url Shortener
+- [X] Chapter 9: Design A Web Crawler
+- [X] Chapter 10: Design A Notification System
+- [X] Chapter 11: Design A News Feed System
+- [X] Chapter 12: Design A Chat System
+- [X] Chapter 13: Design A Search Autocomplete System
+- [X] Chapter 14: Design Youtube
+- [X] Chapter 15: Design Google Drive
+- [X] Chapter 16: The Learning Continues
 
 Table of content for volume 2:
 - [ ] Chapter 1: Proximity Service
 - [ ] Chapter 2: Nearby Friends
 - [ ] Chapter 3: Google Maps
-- [ ] Chapter 4: Distributed Message Queue
-- [ ] Chapter 5: Metrics Monitoring
-- [ ] Chapter 6: Ad Click Event Aggregation
-- [ ] Chapter 7: Hotel Reservation
-- [ ] Chapter 8: Distributed Email Service
-- [ ] Chapter 9: S3-like Object Storage
-- [ ] Chapter 10: Real-time Gaming Leaderboard
+- [X] Chapter 4: Distributed Message Queue
+- [X] Chapter 5: Metrics Monitoring
+- [X] Chapter 6: Ad Click Event Aggregation
+- [X] Chapter 7: Hotel Reservation
+- [X] Chapter 8: Distributed Email Service
+- [X] Chapter 9: S3-like Object Storage
+- [X] Chapter 10: Real-time Gaming Leaderboard
 - [ ] Chapter 11: Payment System
 - [ ] Chapter 12: Digital Wallet
 - [ ] Chapter 13: Stock Exchange
