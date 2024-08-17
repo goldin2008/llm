@@ -56,10 +56,12 @@ st.sidebar.markdown("Please enter your details and preferences below:")
 age = st.sidebar.slider("What is your age?", 1, 100, 25)
 gender = st.sidebar.radio("What is your gender?", ("Male", "Female", "Other"))
 genre = st.sidebar.selectbox("What is your favourite movie genre?", md.explode('genres')["genres"].unique())
+rate = st.sidebar.slider("What is your preference for movie rate?", 1, 10, 6)
 
 
 # Filter the movies based on the user input
 df_filtered = md[md['genres'].apply(lambda x: genre in x)]
+df_filtered = df_filtered[df_filtered['weighted_rate'].apply(lambda x: x>rate)]
 
 
 template_prefix = """You are a movie recommender system that help users to find movies that match their preferences. 
