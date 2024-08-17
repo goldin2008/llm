@@ -19,6 +19,10 @@ import lancedb
 import pandas as pd
 from langchain.chains import RetrievalQA
 
+from lancedb.rerankers import LinearCombinationReranker
+from langchain.docstore.document import Document
+
+
 st.set_page_config(page_title="GlobeBotter", page_icon="🎬")
 st.header('🎬 Welcome to MovieHarbor, your favourite movie recommender')
 
@@ -31,11 +35,18 @@ embeddings = OpenAIEmbeddings()
 uri = "data/sample-lancedb"
 db = lancedb.connect(uri)
 
-table = db.open_table('movies')
-docsearch = LanceDB(connection = table, embedding = embeddings)
+table = db.open_table('my_table')
+# docsearch = LanceDB(connection = table, embedding = embeddings)
 
 # Import the movie dataset
-md = pd.read_pickle('movies.pkl')
+md = pd.read_pickle('data/movies.pkl')
+
+# ================
+documents = [Document(page_content=row['text'], metadata={"source": row['weighted_rate']}) for _, row in md.iterrows()]
+reranker = LinearCombinationReranker(weight=0.3)
+docsearch = LanceDB.from_documents(documents, embeddings, reranker=reranker)
+# ================
+
 
 # Create a sidebar for user input
 st.sidebar.title("Movie Recommendation System")
