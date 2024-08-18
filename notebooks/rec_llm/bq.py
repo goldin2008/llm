@@ -24,7 +24,8 @@ from langchain.docstore.document import Document
 
 
 st.set_page_config(page_title="GlobeBotter", page_icon="bar_chart:")
-st.header('🎬 Welcome to Interview/Exam Practice Asisstant, your favourite advisor')
+# st.header('🎬 Welcome to Interview/Exam Practice Asisstant, your favourite advisor')
+st.header(":bar_chart: Welcome to :blue[Interview/Exam Practice Asisstant], your favourite advisor")
 
 load_dotenv()
 
@@ -51,20 +52,26 @@ docsearch = LanceDB.from_documents(documents, embeddings, reranker=reranker)
 
 
 # Create a sidebar for user input
-st.sidebar.title("Interview/Exam Practice Asisstant")
+st.sidebar.title("_Practice Asisstant_ is :blue[cool] :sunglasses:")
 st.sidebar.markdown("Please enter your details and preferences below:")
 
 # Ask the user for age, gender and favourite movie genre
 age = st.sidebar.slider("What is your age?", 1, 100, 25)
 gender = st.sidebar.radio("What is your gender?", ("Male", "Female", "Other"))
-genre = st.sidebar.selectbox("What is your favourite movie genre?", md.explode('genres')["genres"].unique())
-rate = st.sidebar.slider("What is your preference for movie rate?", 1, 10, 6)
+# genre = st.sidebar.selectbox("What is your favourite movie genre?", md.explode('genres')["genres"].unique())
 education = st.sidebar.selectbox("What is your education background?", user.explode('Education_Level')["Education_Level"].unique())
 
 
+rate = st.sidebar.slider("What is your preference for grade?", 1, 100, 60)
+goal = st.sidebar.radio("What is your practice goal?", ("Job Interview", "Exam"))
+
+
+
 # Filter the movies based on the user input
-df_filtered = md[md['genres'].apply(lambda x: genre in x)]
-df_filtered = df_filtered[df_filtered['weighted_rate'].apply(lambda x: x>rate)]
+# df_filtered = md[md['genres'].apply(lambda x: genre in x)]
+# df_filtered = df_filtered[df_filtered['weighted_rate'].apply(lambda x: x>rate)]
+
+df_filtered = md[md['weighted_rate'].apply(lambda x: x>rate)]
 
 
 template_prefix = """You are a movie recommender system that help users to find movies that match their preferences. 
